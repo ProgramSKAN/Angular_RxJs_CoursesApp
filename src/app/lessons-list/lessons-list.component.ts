@@ -14,7 +14,7 @@ export class LessonsListComponent implements OnInit, Observer {
   constructor() {
     //placed in the constructor, since we need to register observer before broadcasting>disadvantage
     console.log('lessons list component is registerd as observer..')
-    globalEventBus.registerObserver(this);
+    globalEventBus.registerObserver('LESSONS_LIST_AVAILABLE', this);
   }
 
   ngOnInit(): void {

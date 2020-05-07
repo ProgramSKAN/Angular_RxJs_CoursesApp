@@ -13,7 +13,7 @@ export class EventBusExperimentsComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('Top level component broadcasted all lessons...');
-    globalEventBus.notifyObservers(testLessons);//broadcast lessons list to any observers that need to receive this data
+    globalEventBus.notifyObservers('LESSONS_LIST_AVAILABLE', testLessons.slice(0));//broadcast lessons list to any observers that need to receive this data//slice is for copy
   }
 
   addLesson(val: any) {
