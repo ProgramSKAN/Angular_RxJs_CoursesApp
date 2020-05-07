@@ -1,5 +1,5 @@
-# Angular_RxJs_CoursesApp
+# Custoem Event Bus
 
-##### 1.
+component communication is done using global event bus based on observer pattern and see why it has limitaions.
 
-npm new --skip-install Angular-RxJs-CoursesApp
+Remedy:Reactive programming and observable pattern
